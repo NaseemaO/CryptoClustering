@@ -1,39 +1,45 @@
 # Crypto Clustering, Challenge 19: Unsupervised Machine Learning
 
 # Project Overview
-Predict impact on cryptocurrencies with price change percentage using Python and Unsupervised Learning for Data Visualization and Analysis. 
-Optimize data clustering by selecting the best value for k using the elbow method. The K-means algorithm is useful for grouping and understanding data. Elbow curve and Scatter Plots used for visualization and analysis. 
+Predict impact on cryptocurrencies with price change percentage using Python and Unsupervised Learning for Data Visualization and Analysis.
+
+Optimize data clustering by selecting the best value for k using the elbow method. The K-means algorithm is useful for grouping and understanding data.
+
+Elbow curve and Scatter Plots used for visualization and analysis. 
 
 The following 5 features from the input data, the Price Change Percentages, were explored: 
-  24 hours,
-  7 days,
-  14 days, 
-  30 days, 
-  60 days.
+
+    24 hours,
+    7 days,
+    14 days, 
+    30 days, 
+    60 days.
 
 Two data sets created using input data to determine the optimal k number/ number of clusters for each, and then were compared to each other visually.
   1. Normalizing the input data.  This is standardization of data using StandardScaler. 
   2. Combining the normalized and the Principal Component Analysis data. 
 
 # Analysis: 
-  Composite Elbow Curves: Both Elbow Curves have the similarity where 4 is the optimal value for k      
+  Composite Elbow Curves:  Both Elbow Curves have the similarity where 4 is the optimal value for k      
 
   Composite Scatter Plots: 
-    The Scatter Plot of the Scaled Data by Price Segment with k = 4, revealved that the red data dot and the green data dot are outliers. 
-    
-    The Scatter Plot of the Scaled data and PCA data with k = 4, revealed the green data dot and the blue data dot are outliers. 
-    
-    The goal was to find a value for k that corresponds to a measure of inertia that shows minimal change for each additional cluster (or value of k) that is added to the dataset.  In this case the optimal value for k = 4.  The number of clusters are determined by the k value.  This is a reasonable number of clusters.   
 
-    The fewer the clusters, the high the concentration of elements (where elements are tightly grouped together), and they have low inertia value. 
-    This means that there is a small standard deviation for the elements in the cluster relative to the cluster mean value.
-    The fewer number of clusters, the less 'noise' within the clusters. 
+    The Scatter Plot of the Scaled Data by Price Segment with k = 4, revealved that the red data dot and the green data dot are outliers. 
+
+    The Scatter Plot of the Scaled data and PCA data with k = 4, revealed the green data dot and the blue data dot are outliers. 
+
+The goal was to find a value for k that corresponds to a measure of inertia that shows minimal change for each additional cluster (or value of k) that is added to the dataset.  In this case the optimal value for k = 4.  The number of clusters are determined by the k value.  This is a reasonable number of clusters.
+
+The fewer the clusters, the high the concentration of elements (where elements are tightly grouped together), and they have low inertia value. 
+This means that there is a small standard deviation for the elements in the cluster relative to the cluster mean value.
+The fewer number of clusters, the less 'noise' within the clusters. 
 
 Note that there are limitations in inferring from Scatter Charts as they are visually represented in a 2 dimensional space and in actuality we have 5 features, 5 dimensions, in this study.
 
-  <img src="Images\composite_elbow_plots.png" alt="Composite Elbow Curve Plots" width="800" height="400">
+  <img src="Images\composite_elbow_plots.png" alt="Composite Elbow Curve Plots" width="800" height="800">
 
-  <img src="Images\composite_scatter_plots.png"alt="Composite Scatter Plots" width="800" height="400">
+
+  <img src="Images\composite_scatter_plots.png" alt="Composite Scatter Plots" width="800" height="700">
 
 
 # Background: 
