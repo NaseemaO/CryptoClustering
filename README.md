@@ -61,10 +61,13 @@ There is a k value that after which the inertia is pretty stable.  We find the o
 shows minimal change for each additional cluster (or value of k) that is added to the dataset.
  
 ## Programs and Modules required
-Python, Jupyter notebook
-Pandas
-hvPlot
-scikit-learn. sklearn: Cluster / KMeans, sklearn.Preprocessing /StandardScaler, Decomposition / PCA (Principal Component Analysis) 
+  Python, Jupyter notebook
+
+  Pandas
+
+  hvPlot
+
+  scikit-learn. sklearn: Cluster / KMeans, sklearn.Preprocessing /StandardScaler, Decomposition / PCA (Principal Component Analysis) 
 
 # Technical Process
 DRY (Don't Repeat Yourself) principles applied where possible for creating, maintaining, and reusing code(s).
